@@ -1,0 +1,11 @@
+a=input("enter a number")
+b=input("enter a number")
+c=input("enter a number")
+if(a>b)and(a>c):
+    larg=a
+elif(b>a)and(b>c):
+    larg=b
+else:
+    larg=c
+
+print("largest of the three nunmbers is {}".format(larg))
