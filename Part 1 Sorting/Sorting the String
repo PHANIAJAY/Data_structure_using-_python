@@ -1,0 +1,11 @@
+string1="This is a wonderful oppurtunity !Great Day"
+sorted_str=sort(string1)
+print(sorted_str)
+
+string1="This is a wonderful oppurtunity !Great Day"
+string11=string1.split()
+string11.sort()
+print(dir(Strings))
+for i in string11:
+    print(i)
+    
