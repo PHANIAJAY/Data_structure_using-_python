@@ -1,0 +1,8 @@
+lsit=input(str("enter a string"))
+lsit=lsit.lower()
+mystr=reversed(lsit)
+print(mystr)
+if list(lsit)==list(mystr): 
+    print(" {} is a Palindrome",lsit)
+else:
+    print("{} is not a palindrome",lsit)
