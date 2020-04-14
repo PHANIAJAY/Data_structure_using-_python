@@ -1,0 +1,46 @@
+#Arrays 
+# Array is a collection of items stored at contiguous memory locations.
+"""Left rotation of arrays 
+12345---->34512 """
+def rotate(arr,n,m):
+    for i in range(m):
+        rotatebyleft(arr,n,m)
+def rotatebyleft(arr,n,m):
+    temp=arr[0]
+    for i in range(n-1):
+        arr[i]=arr[i+1]
+    arr[n-1]=temp
+        
+def printrotated(arr,n):
+    for i in range(0,n):
+        print("{0}".format(arr[i]),end='')
+arr=[1,2,3,4,5,6]
+n=len(arr)
+m=int(input("Enter the size with which has to be rotated"))
+rotate(arr,n,m)
+printrotated(arr,n)
+
+
+# Python program for reversal algorithm of array rotation 
+def rverseArray(arr,start,end):
+    while(start<end):
+        temp=arr[start]
+        arr[start]=arr[end]
+        arr[end]=temp
+        start+=1
+        end=end-1
+def rotatebyleft(arr,n,m):
+    rverseArray(arr,0,m-1)
+    rverseArray(arr,m+1,n-1)
+    rverseArray(arr,0,n-1)
+def printrotated(arr,n):
+    for i in range(0,n):
+        print("{0}".format(arr[i]),end='')
+arr=[1,2,3,4,5,6]
+n=len(arr)
+m=int(input("Enter the size with which has to be rotated"))
+rotatebyleft(arr,n,m)
+printrotated(arr,n)
+
+
+
